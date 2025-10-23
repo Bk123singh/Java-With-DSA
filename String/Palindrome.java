@@ -1,0 +1,18 @@
+import java.util.*;
+public class Palindrome {
+    public static boolean check(String str){
+        for( int i = 0; i < str.length()/2; i++){
+            int n = str.length();
+            if(str.charAt(i) != (n -i)){
+                return  false;
+            }
+           }
+           return true;
+        }
+    
+
+    public static void main(String [] args){
+        String str = "noon";
+        System.out.println(check(str));
+    }   
+}
